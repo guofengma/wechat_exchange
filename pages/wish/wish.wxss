@@ -1,0 +1,72 @@
+/* .container{
+   column-count: 2; 
+   column-gap: 0;
+}
+
+.container .item{
+   width: 170rpx;
+   break-inside: avoid; 
+   box-sizing: border-box; 
+   padding: 10px;
+}
+.container .item .sample_img{
+   width: 170rpx;
+}
+
+.container .item .sample_img image{
+   width: 170rpx;
+} */
+
+.img_item {
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+   vertical-align: top; 
+   position: relative;
+}
+.img_item .elem{
+   margin-top:30rpx; 
+   position: relative;
+}
+.content{
+   position: relative;
+}
+.img_item .elem::after{
+   content:" ";
+   width:200%;
+   height:200%;
+   position:absolute;
+   top:0;
+   left:0;
+   border:1px solid rgba(0, 0, 0, 0.2);
+   -webkit-transform:scale(0.5);
+   transform:scale(0.5);
+   -webkit-transform-origin:0 0;
+   transform-origin:0 0;
+   box-sizing:border-box;
+}
+.content .wish{
+   font-size: 28rpx;
+   color: #333333;
+   letter-spacing: -0.36px;
+   line-height: 20px;
+   padding: 20rpx 10rpx;
+}
+.user{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 20rpx;
+}
+.user .avator{
+   width: 50rpx;
+   height: 50rpx;
+   border-radius: 25rpx;
+}
+.user .nickname{
+   font-size: 22rpx;
+   color: #666666;
+   letter-spacing: -0.36px;
+   margin-left: 20rpx;
+}

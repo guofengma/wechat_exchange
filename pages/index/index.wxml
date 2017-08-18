@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="item" wx:for="{{kinds}}" wx:for-index="idx" wx:for-item="kind" wx:key="{{idx}}">
+      <view class="section" style="background-color: {{kind.bgColor}}" bindtap="listView" data-id="{{idx}}">
+         <view class="intro" >
+            <view class="title" catchtap="listView" data-id="{{idx}}" style="color: {{kind.titleColor}}">{{kind.title}}</view>
+            <view class="desc" catchtap="listView" data-id="{{idx}}" style="{{kind.desc_style}}">{{kind.desc}}</view>
+         </view>
+         <view class="sample">
+            <image catchtap="listView" data-id="{{idx}}" style="{{kind.img_styles}}" src="{{kind.img_url}}"></image>
+         </view>
+         <image class="arrow" src="../../image/arrow.png" hidden="{{!kind.select}}"></image>
+      </view>
+      <scroll-view class="recommend__box" scroll-x="true" hidden="{{!kind.select}}">
+         <view class="recommend_item" wx:for="{{[1,2,3,4,5]}}" wx:for-index="indx" wx:for-item="hot" wx:key="{{indx}}">
+            <image class="recommend_image" src="../../image/phone.png"></image>
+            <view class="title">华为荣耀5手机haoahoasgdfas</view>
+            <view class="status">交换</view>
+         </view>
+      </scroll-view>
+   </view>
+</view>

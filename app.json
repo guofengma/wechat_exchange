@@ -1,0 +1,38 @@
+{
+   "pages": [
+      "pages/index/index",
+      "pages/fall/fall",
+      
+      "pages/wish/wish",
+      "pages/user/user",
+      "pages/demo/demo"
+   ],
+   "window": {
+      "backgroundTextStyle": "light",
+      "backgroundColor": "light",
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTitleText": "淘换",
+      "navigationBarTextStyle": "black"
+   },
+   "tabBar": {
+      "color": "#666666",
+      "backgroundColor": "#ffffff",
+      "selectedColor": "#75D481",
+      "borderStyle": "white",
+      "position": "top",
+      "list": [
+         {
+            "pagePath": "pages/index/index",
+            "text": "集 市"
+         },
+         {
+            "pagePath": "pages/wish/wish",
+            "text": "心 愿"
+         },
+         {
+            "pagePath": "pages/user/user",
+            "text": "我 的"
+         }
+      ]
+   }
+}

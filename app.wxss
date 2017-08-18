@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  color: #333333;
+  font-size: 30rpx;
+  /*overflow: hidden;*/
+  font-family: PingFangSC-Regular;
+   letter-spacing: 0;
+}
+
+.clear{
+  zoom: 1;
+} 
+.clear:after{
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,87 @@
+.container{
+     padding-bottom: 1px;
+}
+.container .item{
+   margin: 40rpx;
+}
+.container .section{
+   width: 670rpx;
+   height: 300rpx;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+}
+.section .arrow{
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 40rpx;
+   height: 20rpx;
+}
+.container .section .intro{
+   text-align: center;
+}
+
+.container .section .intro .title{
+   font-size: 36rpx;
+   margin-left: 16rpx;
+   font-weight: bold;
+}
+
+.container .section .intro .desc{
+   width: 284rpx;
+   height: 54rpx;
+   line-height: 54rpx;
+   font-size: 24rpx;
+   margin-top: 24rpx;
+   margin-left: 16rpx;
+}
+
+.container .section .sample{
+   margin-right: 16rpx;
+}
+
+.recommend__box{
+   margin-top: 60rpx;
+   text-align: center;
+   white-space: nowrap;
+    overflow:auto;/* winphone8和android4+ */
+   -webkit-overflow-scrolling: touch; /* ios5+ */
+}
+
+.recommend__box .recommend_item{
+   display: inline-block;
+   margin-right: 40rpx;
+}
+.recommend__box .recommend_item .recommend_image{
+   width: 180rpx;
+   height: 180rpx;
+}
+.recommend__box .recommend_item .title{
+   width: 228rpx;
+   height: 36rpx;
+   font-size: 30rpx;
+   color: #333333;
+   letter-spacing: 0;
+   margin-top: 40rpx;
+   text-overflow : ellipsis; 
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.recommend__box .recommend_item .status{
+   width: 80rpx;
+   height: 36rpx;
+   line-height: 36rpx;
+   text-align: center;
+   background: rgba(110,156,247,0.30);
+   border-radius: 4px;
+   margin: 28rpx auto 0;
+   font-size: 12px;
+   color: #6E9CF7;
+   letter-spacing: 0;
+}
