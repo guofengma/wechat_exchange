@@ -1,0 +1,156 @@
+page {
+   background-color: #f8f8f8;
+}
+
+.swiper_parent {
+   height: 450rpx;
+}
+
+.slide-image {
+   width: 100%;
+}
+
+.content {
+   padding: 24rpx;
+   background-color: #fff;
+}
+
+.content .top {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px #ececec solid;
+   padding: 27rpx 0;
+}
+
+.content .top .left {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+.content .top .left .avatar {
+   width: 120rpx;
+   height: 120rpx;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   margin-right: 30rpx;
+}
+
+.content .top .left .user .nickname {
+   font-size: 28rpx;
+   color: #333;
+   letter-spacing: -0.34px;
+}
+
+.content .top .left .user .time {
+   font-size: 28rpx;
+   color: #999;
+   letter-spacing: -0.34px;
+   margin-top: 52rpx;
+}
+
+.content .top .right {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.content .top .right .view {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.content .top .right .viewTotal {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.content .top .right .viewTotal .num {
+   margin-left: 10rpx;
+   color: #999;
+   font-size: 28rpx;
+}
+
+.content .top .right .view .line {
+   margin: 0 16rpx;
+   color: #979797;
+}
+
+.content .top .right .view .distance {
+   color: #999;
+   font-size: 28rpx;
+}
+
+.content .top .right .eyes {
+   width: 40rpx;
+   height: 28rpx;
+}
+
+.content .top .right .collect {
+   width: 48rpx;
+   height: 48rpx;
+   margin-top: 28rpx;
+}
+
+.content .center {
+   padding: 43rpx 0;
+   border-bottom: 1px #ececec solid;
+}
+
+.content .center .wish {
+   font-size: 34rpx;
+   color: #333;
+   letter-spacing: -0.41px;
+}
+
+.content .center .desc {
+   font-size: 28rpx;
+   color: #666;
+   letter-spacing: -0.34px;
+   line-height: 20px;
+   margin-top: 44rpx;
+}
+
+/* content底部部分 */
+.content .bottom .head{
+   padding: 49rpx 0 44rpx 0;
+   font-size: 28rpx;
+   color: #75D481;
+   letter-spacing: -0.3px;
+}
+.content .bottom .head .exchange {
+   width: 32rpx;
+   height: 32rpx;
+   margin-right: 30rpx;
+}
+.content .bottom .goods{
+   padding-bottom: 7rpx;
+   font-size: 28rpx;
+color: #666666;
+letter-spacing: -0.34px;
+line-height: 20px;
+}
+
+.chat {
+   height: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   font-size: 34rpx;
+   color: #fb806b;
+   letter-spacing: -0.36px;
+   margin-top: 20rpx;
+}
+
+.chat .chatImg {
+   width: 40rpx;
+   height: 40rpx;
+}

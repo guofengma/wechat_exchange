@@ -1,4 +1,21 @@
+/* .container{
+   column-count: 2; 
+   column-gap: 0;
+}
 
+.container .item{
+   width: 170rpx;
+   break-inside: avoid; 
+   box-sizing: border-box; 
+   padding: 10px;
+}
+.container .item .sample_img{
+   width: 170rpx;
+}
+
+.container .item .sample_img image{
+   width: 170rpx;
+} */
 
 .img_item {
   width: 48%;
@@ -38,16 +55,9 @@
 .user{
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    padding-bottom: 20rpx;
-   padding: 12rpx;
-}
-.user .ziliao{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
 }
 .user .avator{
    width: 50rpx;
@@ -59,17 +69,4 @@
    color: #666666;
    letter-spacing: -0.36px;
    margin-left: 20rpx;
-}
-
-.user .view{
-   display: flex;
-   align-items: center;
-}
-.user .viewImg{
-   width: 32rpx;
-   height: 24rpx;
-}
-.user .viewnum{
-   color: #999999;
-   margin-left: 10rpx;
 }

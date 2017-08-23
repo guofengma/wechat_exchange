@@ -82,6 +82,11 @@ Page({
          kinds: this.data.kinds
       })
    },
+   detailView() {
+      wx.navigateTo({
+         url: '../giveDetail/giveDetail',
+      })
+   },
    /**
   * 用户点击右上角分享
   */

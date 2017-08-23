@@ -80,7 +80,7 @@ Page({
    },
 
    loadImages: function () {
-      
+
       let images = [
          { pic: "../../image/7.png", height: 0 },
          { pic: "../../image/8.png", height: 0 },

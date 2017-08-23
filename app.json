@@ -1,10 +1,20 @@
 {
    "pages": [
+      
       "pages/index/index",
+      "pages/wish/wish",
       "pages/fall/fall",
       
-      "pages/wish/wish",
+      
       "pages/user/user",
+      "pages/message/message",
+      "pages/mywish/mywish",
+      "pages/collect/collect",
+      "pages/goods/goods",
+      "pages/publish/publish",
+      "pages/giveDetail/giveDetail",
+      "pages/wishDetail/wishDetail",
+      "pages/chat/chat",
       "pages/demo/demo"
    ],
    "window": {

@@ -1,0 +1,53 @@
+<view class="container">
+   <swiper class="swiper_parent" 
+      indicator-dots="{{indicatorDots}}" 
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}"
+      indicator-color="rgba(0,0,0,0.20)"
+      indicator-active-color="#FFFFFF"
+      circular="true">
+      <block wx:for="{{imgUrls}}">
+         <swiper-item>
+            <image src="{{item}}" class="slide-image"/>
+         </swiper-item>
+      </block>
+   </swiper>
+   <view class="content">
+      <view class="top">
+         <view class="left">
+            <image class="avatar" src="../../image/12.png"></image>
+            <view class="user">
+               <view class="nickname">T-ara皇冠</view>
+               <view class="time">2017-8-23</view>
+            </view>
+         </view>
+         <view class="right">
+            <view class="view">
+               <view class="viewTotal">
+                  <image class="eyes" src="../../image/detailEye.png"></image>
+                  <text class="num">32</text>
+               </view>
+               <text class="line">|</text>
+               <view class="distance">800m</view>
+            </view>
+            <image class="collect" src="../../image/detailCollect.png"></image>
+         </view>
+      </view>
+      <view class="center">
+         <view class="wish">MacBook pro2015求带走</view>
+         <view class="desc">外观轻微磨损，126g，运行流畅，无翻修，因想换新电脑，忍痛割爱</view>
+      </view>
+      <view class="bottom">
+         <view class="head">
+            <image class="exchange" src="../../image/detailExchange.png"></image>
+            <text>我想交换到的物品</text>
+         </view>
+         <view class="goods">单反相机</view>
+      </view>
+   </view>
+   <view class="chat" bindtap="chatView">
+      <image class="chatImg" src="../../image/chat.png"></image>
+      <text>立即沟通</text>
+   </view>
+</view>

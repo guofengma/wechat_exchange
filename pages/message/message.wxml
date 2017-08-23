@@ -1,0 +1,41 @@
+<view class="container">
+   <view class="item">
+      <view class="left">
+         <image class="avatar" src="../../image/11.png"></image>
+         <view class="user">
+            <view class="nickname">宫本武藏</view>
+            <view class="title">此处显示入口标题</view>
+         </view>
+      </view>
+      <view class="right">
+         <view class="time">15:00</view>
+         <view class="num">2</view>
+      </view>
+   </view>
+   <view class="item active">
+      <view class="left">
+         <image class="avatar" src="../../image/11.png"></image>
+         <view class="user">
+            <view class="nickname">宫本武藏</view>
+            <view class="title">此处显示入口标题</view>
+         </view>
+      </view>
+      <view class="right">
+         <view class="time">昨天</view>
+         <view class="num">3</view>
+      </view>
+   </view>
+   <view class="item">
+      <view class="left">
+         <image class="avatar" src="../../image/11.png"></image>
+         <view class="user">
+            <view class="nickname">宫本武藏</view>
+            <view class="title">此处显示入口标题</view>
+         </view>
+      </view>
+      <view class="right">
+         <view class="time">三天前</view>
+         <view class="num" style="opacity:0;">2</view>
+      </view>
+   </view>
+</view>

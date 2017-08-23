@@ -12,7 +12,7 @@
          <image class="arrow" src="../../image/arrow.png" hidden="{{!kind.select}}"></image>
       </view>
       <scroll-view class="recommend__box" scroll-x="true" hidden="{{!kind.select}}">
-         <view class="recommend_item" wx:for="{{[1,2,3,4,5]}}" wx:for-index="indx" wx:for-item="hot" wx:key="{{indx}}">
+         <view bindtap="detailView" class="recommend_item" wx:for="{{[1,2,3,4,5]}}" wx:for-index="indx" wx:for-item="hot" wx:key="{{indx}}">
             <image class="recommend_image" src="../../image/phone.png"></image>
             <view class="title">华为荣耀5手机haoahoasgdfas</view>
             <view class="status">交换</view>

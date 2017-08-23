@@ -1,0 +1,133 @@
+page{
+   height: 100%;
+   background-color: #f8f8f8;
+   overflow: hidden;
+}
+
+.top{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 40rpx 0;
+}
+.top .nav{
+   height: 60rpx;
+   width: 160rpx;
+   text-align: center;
+   line-height: 60rpx;
+   background: #ffffff;
+   border: 1px solid #75D481;
+   font-size: 28rpx;
+}
+.top .active{
+   background-color: #75D481;
+   color: #fff;
+}
+.top .give,.top .wish{
+   border-left: none;
+}
+
+.content{
+   padding: 0 30rpx;
+}
+
+.content .content_exchange{
+   padding: 0 40rpx;
+   background-color: #ffffff;
+}
+.content .content_exchange .elem{
+   height: 104rpx;
+   line-height: 104rpx;
+   position: relative;
+   padding-left: 46rpx;
+}
+.content .content_exchange .elem::before{
+   content: " ";
+   width: 20rpx;
+   height: 20rpx;
+   background: #75D481;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   border-radius: 10rpx;
+}
+.content .content_exchange .placeholder_style{
+   font-size: 28rpx;
+   color: #D8D8D8;
+   letter-spacing: -0.41px;
+}
+.content .content_exchange .title,
+.content .content_exchange .desc,
+.content .content_exchange .types,
+.content .content_exchange .want{
+   border-bottom: 1px #ECECEC solid;
+}
+.content_both .types .type_content .typeItem{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 50rpx;
+}
+.content_both .types .type_content .typeItem .typeIcon{
+   width: 70rpx;
+   height: 70rpx;
+}
+.content  .content_exchange .content_both .upload{
+   padding: 40rpx 0;
+}
+.upload .typeIcon{
+   width: 120rpx;
+   height: 120rpx;
+   margin-right: 40rpx;
+}
+
+.content .content_wish{
+    padding: 0 40rpx 36rpx; 
+   background-color: #ffffff;
+}
+.content .content_wish .title{
+   border-bottom: 1px #ECECEC solid;
+   
+}
+.content .content_wish .elem{
+   height: 114rpx;
+   font-size: 28rpx;
+   color: #D8D8D8;
+   letter-spacing: -0.41px;
+   
+}
+.content .content_wish .upload{
+   text-align: center;
+   width: 540rpx;
+   height: 540rpx;
+    background-color: #ECECEC; 
+    margin: 60rpx auto; 
+   position: relative;
+   border: 1px #f8f8f8 solid;
+}
+.content .content_wish .upload .typeIcon{
+   width: 180rpx;
+   height: 180rpx;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.button{
+   height: 94rpx;
+   line-height: 94rpx;
+   background: #75D481;
+   border: 1px solid #ECECEC;
+   border-radius: 4px;
+   font-size: 34rpx;
+   color: #FFFFFF;
+   letter-spacing: -0.41px;
+   margin-top: 58rpx;
+}
+.button::after{
+   border: none;
+}

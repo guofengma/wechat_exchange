@@ -10,7 +10,31 @@ Page({
    data: {
      
    },
-  
+   messageView(){
+      wx.navigateTo({
+         url: '../message/message',
+      })
+   },
+   mywishView(){
+      wx.navigateTo({
+         url: '../mywish/mywish',
+      })
+   },
+   collectView(){
+      wx.navigateTo({
+         url: '../collect/collect',
+      })
+   },
+   goodsView(){
+      wx.navigateTo({
+         url: '../goods/goods',
+      })
+   },
+   publishView(){
+      wx.navigateTo({
+         url: '../publish/publish',
+      })
+   },
    /**
     * 生命周期函数--监听页面加载
     */

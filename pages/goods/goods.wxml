@@ -1,0 +1,26 @@
+<view class="container">
+   <view class="item" wx:for-index="index">
+      <image class="image" src="../../image/sample2.png"></image> 
+      <view class="desc">8成新oppoR9手机白阿打算干啥</view>
+      <view class="bottom">
+         <view class="status">白送</view>
+         <image class="modify" src="../../image/modify.png"></image>
+      </view>
+   </view>
+   <view class="item" wx:for-index="index">
+      <image class="image" src="../../image/sample2.png"></image> 
+      <view class="desc">8成新oppoR9手机白阿打算干啥</view>
+      <view class="bottom">
+         <view class="status" style="background: rgba(110,156,247,0.20);color:#6E9CF7">交换</view>
+         <image class="modify" src="../../image/modify.png"></image>
+      </view>
+   </view>
+   <view class="item" wx:for-index="index">
+      <image class="image" src="../../image/sample2.png"></image> 
+      <view class="desc">8成新oppoR9手机白阿打算干啥</view>
+      <view class="bottom">
+         <view class="status">白送</view>
+         <image class="modify" src="../../image/modify.png"></image>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,63 @@
+page{
+   background-color: #f8f8f8;
+}
+.container{
+   margin-top: 20rpx;
+}
+.item{
+   height: 200rpx;
+   padding: 0 30rpx 0 19rpx;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ffffff;
+}
+.left{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+}
+.left .avatar{
+   width: 102rpx;
+   height: 102rpx;
+   border-radius: 50%;
+   margin-right: 39rpx;
+}
+.left .user .nickname{
+   font-size: 30rpx;
+   color: #333333;
+   letter-spacing: -0.41;
+}
+.left .user .title{
+   font-size: 28rpx;
+   color: #999999;
+   letter-spacing: -0.38;
+   margin-top: 30rpx;
+}
+.right{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+.right .time{
+   font-size: 30rpx;
+   color: #999999;
+   letter-spacing: -0.41;
+}
+.right .num{
+   width: 40rpx;
+   height: 40rpx;
+   background: #FC8B77;
+   font-size: 24rpx;
+   color: #FFFFFF;
+   letter-spacing: -0.41px;
+   text-align: center;
+   line-height: 40rpx;
+   border-radius: 50%;
+   margin-top: 34rpx;
+}
+.active{
+   background-color: #EEEEEE;
+}

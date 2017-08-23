@@ -1,26 +1,26 @@
 <view class="container">
    <view class="section">
-      <view class="item">
+      <view class="item"  bindtouchstart="messageView">
          <image class="icon" src="../../image/news.png"></image>
          <text>消息</text>
       </view>
-      <view class="item">
+      <view class="item" bindtouchstart="mywishView">
          <image class="icon" src="../../image/wish.png"></image>
          <text>心愿</text>
       </view>
    </view>
    <view class="section">
-      <view class="item">
+      <view class="item"  bindtouchstart="collectView">
          <image class="icon" src="../../image/collection.png"></image>
          <text>收藏</text>
       </view>
-      <view class="item">
+      <view class="item"  bindtouchstart="goodsView">
          <image class="icon" src="../../image/goods.png"></image>
          <text>物品</text>
       </view>
    </view>
    <view class="section last">
-      <view class="item">
+      <view class="item"  bindtouchstart="publishView">
          <image class="icon" src="../../image/release.png"></image>
          <text>发布</text>
       </view>
