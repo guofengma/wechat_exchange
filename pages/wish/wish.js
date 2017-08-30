@@ -1,5 +1,8 @@
+import fetch from '../../utils/fetch'
+
 let col1H = 0;
 let col2H = 0;
+let page = 0;
 var app = getApp();
 Page({
 
@@ -30,7 +33,6 @@ Page({
          }
       })
    },
-
    onImageLoad: function (e) {
       console.log(111)
       let imageId = e.currentTarget.id;
@@ -48,38 +50,52 @@ Page({
          let img = images[i];
          if (img.id === imageId) {
             imageObj = img;
+            imageObj.height = imgHeight;
+            let loadingCount = this.data.loadingCount - 1;
+            let col1 = this.data.col1;
+            let col2 = this.data.col2;
+
+            if (col1H <= col2H) {
+               col1H += imgHeight;
+               col1.push(imageObj);
+            } else {
+               col2H += imgHeight;
+               col2.push(imageObj);
+            }
+
+            let data = {
+               loadingCount: loadingCount,
+               col1: col1,
+               col2: col2
+            };
+
+            if (!loadingCount) {
+               data.images = [];
+            }
+
+            this.setData(data);
             break;
          }
       }
 
-      imageObj.height = imgHeight;
+      
 
-      let loadingCount = this.data.loadingCount - 1;
-      let col1 = this.data.col1;
-      let col2 = this.data.col2;
-
-      if (col1H <= col2H) {
-         col1H += imgHeight;
-         col1.push(imageObj);
-      } else {
-         col2H += imgHeight;
-         col2.push(imageObj);
-      }
-
-      let data = {
-         loadingCount: loadingCount,
-         col1: col1,
-         col2: col2
-      };
-
-      if (!loadingCount) {
-         data.images = [];
-      }
-
-      this.setData(data);
+      
    },
 
    loadImages: function () {
+      fetch({
+         url: "exchange/wish/queryallwish",
+         baseUrl: "http://192.168.50.147:9888/",
+         data: {
+            page:page
+         },
+         header: "application/x-www-form-urlencoded",
+         method: "GET"
+      }).then(res => {
+         console.log(res)
+         
+      })
       
       let images = [
          { pic: "../../image/7.png", height: 0 },

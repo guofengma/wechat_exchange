@@ -20,19 +20,19 @@
                   <input type="text" name="class" value="{{idx}}" hidden="true" />
                   <view class="type_content">
                      <view class="typeItem">
-                        <image bindtouchstart="typeSelect" data-id="0" class="typeIcon" src="../../image/pulish/{{idx == 0 ?'digitalAct.png' : 'digital.png'}}"></image>
-                        <image bindtouchstart="typeSelect" data-id="1" class="typeIcon" src="../../image/pulish/{{idx == 1 ?'babyAct.png' : 'baby.png'}}"></image>
-                        <image bindtouchstart="typeSelect" data-id="2" class="typeIcon" src="../../image/pulish/{{idx == 2 ?'clothingAct.png' : 'clothing.png'}}"></image>
+                        <image bindtouchstart="typeSelect" data-id="1" class="typeIcon" src="../../image/pulish/{{idx == 1 ?'digitalAct.png' : 'digital.png'}}"></image>
+                        <image bindtouchstart="typeSelect" data-id="2" class="typeIcon" src="../../image/pulish/{{idx == 2 ?'babyAct.png' : 'baby.png'}}"></image>
+                        <image bindtouchstart="typeSelect" data-id="3" class="typeIcon" src="../../image/pulish/{{idx == 3 ?'clothingAct.png' : 'clothing.png'}}"></image>
                      </view>
                      <view class="typeItem">
-                        <image bindtouchstart="typeSelect" data-id="3" class="typeIcon" src="../../image/pulish/{{idx == 3 ? 'furnishingAct.png' : 'furnishing.png'}}"></image>
-                        <image bindtouchstart="typeSelect" data-id="4" class="typeIcon" src="../../image/pulish/{{idx == 4 ? 'booksAct.png' : 'books.png'}}"></image>
-                        <image bindtouchstart="typeSelect" data-id="5" class="typeIcon" src="../../image/pulish/{{idx == 5 ? 'othersAct.png' : 'others.png'}}"></image>
+                        <image bindtouchstart="typeSelect" data-id="4" class="typeIcon" src="../../image/pulish/{{idx == 4 ? 'furnishingAct.png' : 'furnishing.png'}}"></image>
+                        <image bindtouchstart="typeSelect" data-id="5" class="typeIcon" src="../../image/pulish/{{idx == 5 ? 'booksAct.png' : 'books.png'}}"></image>
+                        <image bindtouchstart="typeSelect" data-id="6" class="typeIcon" src="../../image/pulish/{{idx == 6 ? 'othersAct.png' : 'others.png'}}"></image>
                      </view>
                   </view>
                </view>
                <view class="want" hidden="{{!exchage_active}}">
-                  <input class="elem" type="text" placeholder="想要换到的物品" placeholder-class="placeholder_style" />
+                  <input class="elem" name="goal" type="text" placeholder="想要换到的物品" placeholder-class="placeholder_style" />
                </view>
                <view class="upload">
                   <image bindtouchstart="imageView" data-idx="previewImg1" class="typeIcon" src="{{previewImg1 ? previewImg1 : imageDefault}}"></image>

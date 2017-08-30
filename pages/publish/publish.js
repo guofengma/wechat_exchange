@@ -1,5 +1,6 @@
 // pages/publish/publish.js
 import * as types from '../../utils/uploadImage'
+import fetch from '../../utils/fetch'
 Page({
 
   /**
@@ -75,20 +76,88 @@ Page({
   formSubmit(e) {
    let param = e.detail.value;
    console.log(param)
-
-   var tempFilePaths = res.tempFilePaths
-   wx.uploadFile({
-      url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
-      filePath: tempFilePaths[0],
-      name: 'file',
-      formData: {
-         'user': 'test'
-      },
-      success: function (res) {
-         var data = res.data
-         //do something
-      }
-   })
+   if (this.data.exchage_active) {
+      fetch({
+         url: "exchange/exchange/save",
+         baseUrl: "http://192.168.50.147:9888/",
+         data:{
+            title: param.title,
+            description: param.desc,
+            "type": param.class,
+            goal: param.goal,
+            image1: this.data.previewImg1,
+            image2: this.data.previewImg2,
+            image3: this.data.previewImg3,
+            opeind: wx.getStorageSync('user').openid
+         },
+         header: "application/x-www-form-urlencoded",
+         method: "POST"
+      }).then(res => {
+         console.log(res)
+         if (res) {
+            wx.switchTab({
+               url: '../index/index',
+            })
+         }
+      })
+   }
+   else if (this.data.give_active) {
+      fetch({
+         url: "exchange/free/save",
+         baseUrl: "http://192.168.50.147:9888/",
+         data: {
+            title: param.title,
+            description: param.desc,
+            "type": param.class,
+            image1: this.data.previewImg1,
+            image2: this.data.previewImg2,
+            image3: this.data.previewImg3,
+            opeind: wx.getStorageSync('user').openid
+         },
+         header: "application/x-www-form-urlencoded",
+         method: "POST"
+      }).then(res => {
+         console.log(res)
+         if(res) {
+            wx.switchTab({
+               url: '../index/index',
+            })
+         }
+      })
+   }
+   else if (this.data.wish_active) {
+      fetch({
+         url: "exchange/wish/save",
+         baseUrl: "http://192.168.50.147:9888/",
+         data: {
+            title: param.title,
+            image1: this.data.previewImg4,
+            opeind: wx.getStorageSync('user').openid
+         },
+         header: "application/x-www-form-urlencoded",
+         method: "POST"
+      }).then(res => {
+         console.log(res)
+         if (res) {
+            wx.switchTab({
+               url: '../wish/wish',
+            })
+         }
+      })
+   }
+   // var tempFilePaths = res.tempFilePaths
+   // wx.uploadFile({
+   //    url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+   //    filePath: tempFilePaths[0],
+   //    name: 'file',
+   //    formData: {
+   //       'user': 'test'
+   //    },
+   //    success: function (res) {
+   //       var data = res.data
+   //       //do something
+   //    }
+   // })
   },
   /**
    * 生命周期函数--监听页面加载
