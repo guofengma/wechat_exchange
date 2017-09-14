@@ -12,7 +12,7 @@ App({
           if (res.code) {
             
             var d = that.globalData;//这里存储了appid、secret、token串    
-            var l = 'http://192.168.50.147:9888/wx/getopenid?code=' + res.code;
+            var l = 'http://123.207.144.58:8123/exchange/getopenid?code=' + res.code;
             wx.request({
               url: l,
               data: {},
